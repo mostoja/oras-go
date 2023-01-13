@@ -18,8 +18,8 @@ package registryutil
 import (
 	"context"
 
-	"oras.land/oras-go/v2/registry"
-	"oras.land/oras-go/v2/registry/remote/auth"
+	"github.com/mostoja/oras-go/v2/registry"
+	"github.com/mostoja/oras-go/v2/registry/remote/auth"
 )
 
 // WithScopeHint adds a hinted scope to the context.

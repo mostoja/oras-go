@@ -25,11 +25,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/mostoja/oras-go/v2/content"
+	"github.com/mostoja/oras-go/v2/content/memory"
 	"github.com/opencontainers/go-digest"
 	specs "github.com/opencontainers/image-spec/specs-go"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/content"
-	"oras.land/oras-go/v2/content/memory"
 )
 
 func Test_Pack_Default(t *testing.T) {

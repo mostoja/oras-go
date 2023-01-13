@@ -26,14 +26,14 @@ import (
 	"sync"
 	"sync/atomic"
 
+	"github.com/mostoja/oras-go/v2/content"
+	"github.com/mostoja/oras-go/v2/errdef"
+	"github.com/mostoja/oras-go/v2/internal/cas"
+	"github.com/mostoja/oras-go/v2/internal/graph"
+	"github.com/mostoja/oras-go/v2/internal/ioutil"
+	"github.com/mostoja/oras-go/v2/internal/resolver"
 	"github.com/opencontainers/go-digest"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/content"
-	"oras.land/oras-go/v2/errdef"
-	"oras.land/oras-go/v2/internal/cas"
-	"oras.land/oras-go/v2/internal/graph"
-	"oras.land/oras-go/v2/internal/ioutil"
-	"oras.land/oras-go/v2/internal/resolver"
 )
 
 // bufPool is a pool of byte buffers that can be reused for copying content
@@ -101,6 +101,8 @@ type Store struct {
 	// manifest and config file, while leaving only named layer files.
 	// Default value: false.
 	IgnoreNoName bool
+	// Ignore paths from annotations in layers, pull everything to workdir
+	IgnorePaths bool
 
 	workingDir   string   // the working directory of the file store
 	closed       int32    // if the store is closed - 0: false, 1: true.
@@ -583,7 +585,7 @@ func (s *Store) descriptorFromFile(fi os.FileInfo, mediaType, path string) (desc
 // resolveWritePath resolves the path to write for the given name.
 func (s *Store) resolveWritePath(name string) (string, error) {
 	path := s.absPath(name)
-	if !s.AllowPathTraversalOnWrite {
+	if !s.AllowPathTraversalOnWrite && !s.IgnorePaths {
 		base, err := filepath.Abs(s.workingDir)
 		if err != nil {
 			return "", err
@@ -607,6 +609,9 @@ func (s *Store) resolveWritePath(name string) (string, error) {
 		} else if !os.IsNotExist(err) {
 			return "", err
 		}
+	}
+	if s.IgnorePaths {
+		path = filepath.Base(name)
 	}
 	return path, nil
 }

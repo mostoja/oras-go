@@ -28,13 +28,13 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/mostoja/oras-go/v2"
+	"github.com/mostoja/oras-go/v2/content"
+	. "github.com/mostoja/oras-go/v2/registry/internal/doc"
+	"github.com/mostoja/oras-go/v2/registry/remote"
 	"github.com/opencontainers/go-digest"
 	"github.com/opencontainers/image-spec/specs-go"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2"
-	"oras.land/oras-go/v2/content"
-	. "oras.land/oras-go/v2/registry/internal/doc"
-	"oras.land/oras-go/v2/registry/remote"
 )
 
 const (

@@ -27,13 +27,13 @@ import (
 	"path/filepath"
 	"sync"
 
+	"github.com/mostoja/oras-go/v2/content"
+	"github.com/mostoja/oras-go/v2/errdef"
+	"github.com/mostoja/oras-go/v2/internal/descriptor"
+	"github.com/mostoja/oras-go/v2/internal/graph"
+	"github.com/mostoja/oras-go/v2/internal/resolver"
 	specs "github.com/opencontainers/image-spec/specs-go"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/content"
-	"oras.land/oras-go/v2/errdef"
-	"oras.land/oras-go/v2/internal/descriptor"
-	"oras.land/oras-go/v2/internal/graph"
-	"oras.land/oras-go/v2/internal/resolver"
 )
 
 // ociImageIndexFile is the file name of the index

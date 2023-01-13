@@ -22,10 +22,10 @@ import (
 	"io"
 	"sync"
 
+	contentpkg "github.com/mostoja/oras-go/v2/content"
+	"github.com/mostoja/oras-go/v2/errdef"
+	"github.com/mostoja/oras-go/v2/internal/descriptor"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	contentpkg "oras.land/oras-go/v2/content"
-	"oras.land/oras-go/v2/errdef"
-	"oras.land/oras-go/v2/internal/descriptor"
 )
 
 // Memory is a memory based CAS.

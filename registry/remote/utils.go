@@ -23,9 +23,9 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/mostoja/oras-go/v2/content"
+	"github.com/mostoja/oras-go/v2/errdef"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/content"
-	"oras.land/oras-go/v2/errdef"
 )
 
 // defaultMaxMetadataBytes specifies the default limit on how many response

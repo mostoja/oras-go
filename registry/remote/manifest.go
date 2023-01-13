@@ -18,8 +18,8 @@ package remote
 import (
 	"strings"
 
+	"github.com/mostoja/oras-go/v2/internal/docker"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/internal/docker"
 )
 
 // defaultManifestMediaTypes contains the default set of manifests media types.

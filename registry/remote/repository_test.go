@@ -33,15 +33,15 @@ import (
 	"sync/atomic"
 	"testing"
 
+	"github.com/mostoja/oras-go/v2/content"
+	"github.com/mostoja/oras-go/v2/errdef"
+	"github.com/mostoja/oras-go/v2/internal/interfaces"
+	"github.com/mostoja/oras-go/v2/registry"
+	"github.com/mostoja/oras-go/v2/registry/remote/auth"
 	"github.com/opencontainers/go-digest"
 	specs "github.com/opencontainers/image-spec/specs-go"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
 	"golang.org/x/sync/errgroup"
-	"oras.land/oras-go/v2/content"
-	"oras.land/oras-go/v2/errdef"
-	"oras.land/oras-go/v2/internal/interfaces"
-	"oras.land/oras-go/v2/registry"
-	"oras.land/oras-go/v2/registry/remote/auth"
 )
 
 type testIOStruct struct {

@@ -21,17 +21,17 @@ import (
 	"fmt"
 	"io"
 
+	"github.com/mostoja/oras-go/v2/content"
+	"github.com/mostoja/oras-go/v2/errdef"
+	"github.com/mostoja/oras-go/v2/internal/cas"
+	"github.com/mostoja/oras-go/v2/internal/descriptor"
+	"github.com/mostoja/oras-go/v2/internal/platform"
+	"github.com/mostoja/oras-go/v2/internal/registryutil"
+	"github.com/mostoja/oras-go/v2/internal/status"
+	"github.com/mostoja/oras-go/v2/internal/syncutil"
+	"github.com/mostoja/oras-go/v2/registry"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
 	"golang.org/x/sync/semaphore"
-	"oras.land/oras-go/v2/content"
-	"oras.land/oras-go/v2/errdef"
-	"oras.land/oras-go/v2/internal/cas"
-	"oras.land/oras-go/v2/internal/descriptor"
-	"oras.land/oras-go/v2/internal/platform"
-	"oras.land/oras-go/v2/internal/registryutil"
-	"oras.land/oras-go/v2/internal/status"
-	"oras.land/oras-go/v2/internal/syncutil"
-	"oras.land/oras-go/v2/registry"
 )
 
 // defaultConcurrency is the default value of CopyGraphOptions.Concurrency.

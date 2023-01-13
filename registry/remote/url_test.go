@@ -20,7 +20,7 @@ import (
 	"reflect"
 	"testing"
 
-	"oras.land/oras-go/v2/registry"
+	"github.com/mostoja/oras-go/v2/registry"
 )
 
 func Test_buildReferrersURL(t *testing.T) {

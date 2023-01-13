@@ -22,7 +22,7 @@ import (
 	"io/fs"
 	"testing"
 
-	"oras.land/oras-go/v2/errdef"
+	"github.com/mostoja/oras-go/v2/errdef"
 )
 
 /*

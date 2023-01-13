@@ -21,16 +21,16 @@ import (
 	"errors"
 	"regexp"
 
+	"github.com/mostoja/oras-go/v2/content"
+	"github.com/mostoja/oras-go/v2/internal/cas"
+	"github.com/mostoja/oras-go/v2/internal/copyutil"
+	"github.com/mostoja/oras-go/v2/internal/descriptor"
+	"github.com/mostoja/oras-go/v2/internal/docker"
+	"github.com/mostoja/oras-go/v2/internal/status"
+	"github.com/mostoja/oras-go/v2/internal/syncutil"
+	"github.com/mostoja/oras-go/v2/registry"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
 	"golang.org/x/sync/semaphore"
-	"oras.land/oras-go/v2/content"
-	"oras.land/oras-go/v2/internal/cas"
-	"oras.land/oras-go/v2/internal/copyutil"
-	"oras.land/oras-go/v2/internal/descriptor"
-	"oras.land/oras-go/v2/internal/docker"
-	"oras.land/oras-go/v2/internal/status"
-	"oras.land/oras-go/v2/internal/syncutil"
-	"oras.land/oras-go/v2/registry"
 )
 
 // DefaultExtendedCopyOptions provides the default ExtendedCopyOptions.

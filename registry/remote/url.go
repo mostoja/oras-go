@@ -20,7 +20,7 @@ import (
 	"net/url"
 	"strings"
 
-	"oras.land/oras-go/v2/registry"
+	"github.com/mostoja/oras-go/v2/registry"
 )
 
 // buildScheme returns HTTP scheme used to access the remote registry.

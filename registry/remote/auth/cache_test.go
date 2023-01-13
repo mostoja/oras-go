@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"oras.land/oras-go/v2/errdef"
+	"github.com/mostoja/oras-go/v2/errdef"
 )
 
 func Test_concurrentCache_GetScheme(t *testing.T) {

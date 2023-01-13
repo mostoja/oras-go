@@ -24,9 +24,9 @@ import (
 	"path/filepath"
 	"testing"
 
+	"github.com/mostoja/oras-go/v2"
+	"github.com/mostoja/oras-go/v2/content/file"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2"
-	"oras.land/oras-go/v2/content/file"
 )
 
 var workingDir string // the working directory for the examples

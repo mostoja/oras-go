@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"io"
 
+	"github.com/mostoja/oras-go/v2/content"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/content"
 )
 
 // ExampleVerifyReader gives an example of creating and using VerifyReader.

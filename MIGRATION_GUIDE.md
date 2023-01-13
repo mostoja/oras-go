@@ -11,28 +11,28 @@ In version `v2`, ORAS Go library has been completely refreshed with:
 
 ## Major Changes in `v2`
 
-- Moves `content.FileStore` to [file.Store](https://pkg.go.dev/oras.land/oras-go/v2/content/file#Store)
-- Moves `content.OCIStore` to [oci.Store](https://pkg.go.dev/oras.land/oras-go/v2/content/oci#Store)
-- Moves `content.MemoryStore` to [memory.Store](https://pkg.go.dev/oras.land/oras-go/v2/content/memory#Store)
-- Provides [SDK](https://pkg.go.dev/oras.land/oras-go/v2/registry/remote) to interact with OCI-compliant and Docker-compliant registries
-- Supports [Copy](https://pkg.go.dev/oras.land/oras-go/v2#Copy) with more flexible options
-- Supports [Extended Copy](https://pkg.go.dev/oras.land/oras-go/v2#ExtendedCopy) with options *(experimental)*
-- No longer supports `docker.Login` and `docker.Logout` (removes the dependency on `docker`); instead, provides authentication through [auth.Client](https://pkg.go.dev/oras.land/oras-go/v2/registry/remote/auth#Client)
+- Moves `content.FileStore` to [file.Store](https://pkg.go.dev/github.com/mostoja/oras-go/v2/content/file#Store)
+- Moves `content.OCIStore` to [oci.Store](https://pkg.go.dev/github.com/mostoja/oras-go/v2/content/oci#Store)
+- Moves `content.MemoryStore` to [memory.Store](https://pkg.go.dev/github.com/mostoja/oras-go/v2/content/memory#Store)
+- Provides [SDK](https://pkg.go.dev/github.com/mostoja/oras-go/v2/registry/remote) to interact with OCI-compliant and Docker-compliant registries
+- Supports [Copy](https://pkg.go.dev/github.com/mostoja/oras-go/v2#Copy) with more flexible options
+- Supports [Extended Copy](https://pkg.go.dev/github.com/mostoja/oras-go/v2#ExtendedCopy) with options *(experimental)*
+- No longer supports `docker.Login` and `docker.Logout` (removes the dependency on `docker`); instead, provides authentication through [auth.Client](https://pkg.go.dev/github.com/mostoja/oras-go/v2/registry/remote/auth#Client)
 
-Documentation and examples are available at [pkg.go.dev](https://pkg.go.dev/oras.land/oras-go/v2).
+Documentation and examples are available at [pkg.go.dev](https://pkg.go.dev/github.com/mostoja/oras-go/v2).
 
 ## Migrating from `v1` to `v2`
 
 1. Get the `v2` package
 
     ```sh
-    go get oras.land/oras-go/v2
+    go get github.com/mostoja/oras-go/v2
     ```
 
 2. Import and use the `v2` package
 
     ```go
-    import "oras.land/oras-go/v2"
+    import "github.com/mostoja/oras-go/v2"
     ```
 
 3. Run

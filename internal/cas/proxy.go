@@ -20,9 +20,9 @@ import (
 	"io"
 	"sync"
 
+	"github.com/mostoja/oras-go/v2/content"
+	"github.com/mostoja/oras-go/v2/internal/ioutil"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/content"
-	"oras.land/oras-go/v2/internal/ioutil"
 )
 
 // Proxy is a caching proxy for the storage.

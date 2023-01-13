@@ -19,8 +19,8 @@ import (
 	"context"
 	"encoding/json"
 
+	"github.com/mostoja/oras-go/v2/internal/docker"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/internal/docker"
 )
 
 // PredecessorFinder finds out the nodes directly pointing to a given node of a

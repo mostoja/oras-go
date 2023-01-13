@@ -20,8 +20,8 @@ import (
 	"io"
 	"reflect"
 
+	"github.com/mostoja/oras-go/v2/content"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/content"
 )
 
 // CloserFunc is the basic Close method defined in io.Closer.

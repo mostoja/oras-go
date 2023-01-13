@@ -27,7 +27,7 @@ import (
 	"net/url"
 	"strings"
 
-	"oras.land/oras-go/v2/registry/remote/internal/errutil"
+	"github.com/mostoja/oras-go/v2/registry/remote/internal/errutil"
 )
 
 // DefaultClient is the default auth-decorated client.

@@ -22,17 +22,17 @@ import (
 	"fmt"
 	"io"
 
+	"github.com/mostoja/oras-go/v2/content"
+	"github.com/mostoja/oras-go/v2/errdef"
+	"github.com/mostoja/oras-go/v2/internal/cas"
+	"github.com/mostoja/oras-go/v2/internal/docker"
+	"github.com/mostoja/oras-go/v2/internal/interfaces"
+	"github.com/mostoja/oras-go/v2/internal/platform"
+	"github.com/mostoja/oras-go/v2/internal/registryutil"
+	"github.com/mostoja/oras-go/v2/internal/syncutil"
+	"github.com/mostoja/oras-go/v2/registry"
+	"github.com/mostoja/oras-go/v2/registry/remote/auth"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/content"
-	"oras.land/oras-go/v2/errdef"
-	"oras.land/oras-go/v2/internal/cas"
-	"oras.land/oras-go/v2/internal/docker"
-	"oras.land/oras-go/v2/internal/interfaces"
-	"oras.land/oras-go/v2/internal/platform"
-	"oras.land/oras-go/v2/internal/registryutil"
-	"oras.land/oras-go/v2/internal/syncutil"
-	"oras.land/oras-go/v2/registry"
-	"oras.land/oras-go/v2/registry/remote/auth"
 )
 
 const (

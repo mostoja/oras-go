@@ -28,13 +28,13 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/mostoja/oras-go/v2"
+	"github.com/mostoja/oras-go/v2/content/memory"
+	"github.com/mostoja/oras-go/v2/content/oci"
+	"github.com/mostoja/oras-go/v2/registry/remote"
 	"github.com/opencontainers/go-digest"
 	specs "github.com/opencontainers/image-spec/specs-go"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2"
-	"oras.land/oras-go/v2/content/memory"
-	"oras.land/oras-go/v2/content/oci"
-	"oras.land/oras-go/v2/registry/remote"
 )
 
 var exampleMemoryStore oras.Target

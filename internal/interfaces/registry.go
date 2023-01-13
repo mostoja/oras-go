@@ -15,7 +15,7 @@ limitations under the License.
 
 package interfaces
 
-import "oras.land/oras-go/v2/registry"
+import "github.com/mostoja/oras-go/v2/registry"
 
 // ReferenceParser provides reference parsing.
 type ReferenceParser interface {

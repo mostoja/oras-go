@@ -28,7 +28,7 @@ import (
 	"sync/atomic"
 	"testing"
 
-	"oras.land/oras-go/v2/registry/remote/errcode"
+	"github.com/mostoja/oras-go/v2/registry/remote/errcode"
 )
 
 func TestClient_SetUserAgent(t *testing.T) {

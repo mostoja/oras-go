@@ -22,7 +22,7 @@ import (
 	"strings"
 	"testing"
 
-	"oras.land/oras-go/v2/registry/remote/errcode"
+	"github.com/mostoja/oras-go/v2/registry/remote/errcode"
 )
 
 func Test_ParseErrorResponse(t *testing.T) {

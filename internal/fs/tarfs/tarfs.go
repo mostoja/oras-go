@@ -23,7 +23,7 @@ import (
 	"io/fs"
 	"os"
 
-	"oras.land/oras-go/v2/errdef"
+	"github.com/mostoja/oras-go/v2/errdef"
 )
 
 // blockSize is the size of each block in a tar archive.

@@ -33,11 +33,11 @@ import (
 	specs "github.com/opencontainers/image-spec/specs-go"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
 
-	"oras.land/oras-go/v2"
-	"oras.land/oras-go/v2/content"
-	"oras.land/oras-go/v2/content/memory"
-	"oras.land/oras-go/v2/errdef"
-	"oras.land/oras-go/v2/registry/remote"
+	"github.com/mostoja/oras-go/v2"
+	"github.com/mostoja/oras-go/v2/content"
+	"github.com/mostoja/oras-go/v2/content/memory"
+	"github.com/mostoja/oras-go/v2/errdef"
+	"github.com/mostoja/oras-go/v2/registry/remote"
 )
 
 func TestExtendedCopy_FullCopy(t *testing.T) {

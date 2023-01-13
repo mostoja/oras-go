@@ -20,11 +20,11 @@ import (
 	"io"
 	"sync"
 
+	"github.com/mostoja/oras-go/v2/content"
+	"github.com/mostoja/oras-go/v2/internal/cas"
+	"github.com/mostoja/oras-go/v2/internal/ioutil"
+	"github.com/mostoja/oras-go/v2/registry"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/content"
-	"oras.land/oras-go/v2/internal/cas"
-	"oras.land/oras-go/v2/internal/ioutil"
-	"oras.land/oras-go/v2/registry"
 )
 
 // ReferenceStorage represents a CAS that supports registry.ReferenceFetcher.

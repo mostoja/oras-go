@@ -18,10 +18,10 @@ package remote_test
 import (
 	"testing"
 
-	"oras.land/oras-go/v2"
-	"oras.land/oras-go/v2/internal/interfaces"
-	"oras.land/oras-go/v2/registry"
-	"oras.land/oras-go/v2/registry/remote"
+	"github.com/mostoja/oras-go/v2"
+	"github.com/mostoja/oras-go/v2/internal/interfaces"
+	"github.com/mostoja/oras-go/v2/registry"
+	"github.com/mostoja/oras-go/v2/registry/remote"
 )
 
 func TestRepositoryInterface(t *testing.T) {

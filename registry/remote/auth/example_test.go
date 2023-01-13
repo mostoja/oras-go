@@ -25,8 +25,8 @@ import (
 	"strings"
 	"testing"
 
-	. "oras.land/oras-go/v2/registry/internal/doc"
-	"oras.land/oras-go/v2/registry/remote/auth"
+	. "github.com/mostoja/oras-go/v2/registry/internal/doc"
+	"github.com/mostoja/oras-go/v2/registry/remote/auth"
 )
 
 const (

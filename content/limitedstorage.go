@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"io"
 
+	"github.com/mostoja/oras-go/v2/errdef"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/errdef"
 )
 
 // LimitedStorage represents a CAS with a push size limit.

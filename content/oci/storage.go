@@ -24,9 +24,9 @@ import (
 	"path/filepath"
 	"sync"
 
+	"github.com/mostoja/oras-go/v2/errdef"
+	"github.com/mostoja/oras-go/v2/internal/ioutil"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/errdef"
-	"oras.land/oras-go/v2/internal/ioutil"
 )
 
 // bufPool is a pool of byte buffers that can be reused for copying content

@@ -21,8 +21,8 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/mostoja/oras-go/v2/errdef"
 	"github.com/opencontainers/go-digest"
-	"oras.land/oras-go/v2/errdef"
 )
 
 // regular expressions for components.

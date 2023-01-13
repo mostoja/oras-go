@@ -27,8 +27,8 @@ import (
 	"strings"
 	"testing"
 
-	"oras.land/oras-go/v2/errdef"
-	"oras.land/oras-go/v2/registry"
+	"github.com/mostoja/oras-go/v2/errdef"
+	"github.com/mostoja/oras-go/v2/registry"
 )
 
 func TestRegistryInterface(t *testing.T) {
@@ -265,7 +265,7 @@ func TestRegistry_Repositories_WithLastParam(t *testing.T) {
 	}
 }
 
-//indexOf returns the index of an element within a slice
+// indexOf returns the index of an element within a slice
 func indexOf(element string, data []string) int {
 	for ind, val := range data {
 		if element == val {

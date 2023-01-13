@@ -18,8 +18,8 @@ package status
 import (
 	"sync"
 
+	"github.com/mostoja/oras-go/v2/internal/descriptor"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/internal/descriptor"
 )
 
 // Tracker tracks content status described by a descriptor.

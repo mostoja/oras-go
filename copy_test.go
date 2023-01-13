@@ -27,15 +27,15 @@ import (
 	"sync/atomic"
 	"testing"
 
+	"github.com/mostoja/oras-go/v2"
+	"github.com/mostoja/oras-go/v2/content"
+	"github.com/mostoja/oras-go/v2/content/file"
+	"github.com/mostoja/oras-go/v2/content/memory"
+	"github.com/mostoja/oras-go/v2/errdef"
+	"github.com/mostoja/oras-go/v2/internal/cas"
+	"github.com/mostoja/oras-go/v2/internal/docker"
 	"github.com/opencontainers/go-digest"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2"
-	"oras.land/oras-go/v2/content"
-	"oras.land/oras-go/v2/content/file"
-	"oras.land/oras-go/v2/content/memory"
-	"oras.land/oras-go/v2/errdef"
-	"oras.land/oras-go/v2/internal/cas"
-	"oras.land/oras-go/v2/internal/docker"
 )
 
 // storageTracker tracks storage API counts.

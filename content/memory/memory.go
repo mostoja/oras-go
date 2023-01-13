@@ -21,12 +21,12 @@ import (
 	"fmt"
 	"io"
 
+	"github.com/mostoja/oras-go/v2/content"
+	"github.com/mostoja/oras-go/v2/errdef"
+	"github.com/mostoja/oras-go/v2/internal/cas"
+	"github.com/mostoja/oras-go/v2/internal/graph"
+	"github.com/mostoja/oras-go/v2/internal/resolver"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/content"
-	"oras.land/oras-go/v2/errdef"
-	"oras.land/oras-go/v2/internal/cas"
-	"oras.land/oras-go/v2/internal/graph"
-	"oras.land/oras-go/v2/internal/resolver"
 )
 
 // Store represents a memory based store, which implements `oras.Target`.

@@ -19,8 +19,8 @@ import (
 	"context"
 	"sync"
 
+	"github.com/mostoja/oras-go/v2/errdef"
 	ocispec "github.com/opencontainers/image-spec/specs-go/v1"
-	"oras.land/oras-go/v2/errdef"
 )
 
 // Memory is a memory based resolver.
